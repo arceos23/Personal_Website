@@ -1,4 +1,59 @@
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(58, 58, 58);
+    color: ivory;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: ivory;
+    color: rgb(0, 255, 247);
+    margin-top: 40px;
+}
+
+h1, h2 {
+    padding-top: 40px;
+}
+
+h2, h3, h4 {
+    color: rgb(0, 255, 247);
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+section p {
+    display: inline-block;
+    margin: 10px 25px 0px 20px;
+}
+
 .portfolio-img {
     max-width: 1000px;
     max-height: 1000px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    margin-top: 40px;
 }
