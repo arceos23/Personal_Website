@@ -13,13 +13,15 @@
 </head>
 <body>
     <nav>
-        <a href="#shane-arceo">Shane Arceo</a>
-        <a href="#about-me">About me</a>
-        <a href="#experience">Experience</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#about-this-website">About this website</a>
+        <div>
+            <a href="#shane-arceo">Shane Arceo</a>
+            <a href="#about-me">About me</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#about-this-website">About this website</a>
+        </div>
     </nav>
     <main>
         <header id="shane-arceo"><h1>Shane Arceo</h1></header>
@@ -54,22 +56,30 @@
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>C</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React.js</li>
-                <li>JUnit</li>
-                <li>SQL</li>
-                <li>MongoDB</li>
-                <li>Neo4j</li>
-                <li>Firebase</li>
-                <li>AWS</li>
-                <li>Git</li>
-                <li>GitHub</li>
+            <p>Languages</p>
+                <div class="skills-block">
+                    <span class="skill">Python</span>
+                    <span class="skill">Java</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">C</span>
+                </div>
+            <p>Web development</p>
+                <div class="skills-block">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">React.js</span>
+                </div>
+            <p>Technologies & tools</p>
+                <div class="skills-block">
+                    <span class="skill">JUnit</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">Neo4j</span>
+                    <span class="skill">Firebase</span>
+                    <span class="skill">AWS</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">GitHub</span>
+                </div>
             </ul>
         </section>
         <section id="education">
@@ -112,12 +122,22 @@
         </section>
         <section id="about-this-website">
             <h2>About this website</h2>
-            <p>I built this website without the use of any libraries or frameworks to get more experience with the fundamentals of web development. [insert learnings here such as DOM manipulation, etc.]</p>
+            <p>I built this website without the use of any libraries or frameworks to get more experience with the fundamentals of web development and have the utmost freedom and flexibility to create my website. New things I worked on that I did not have experience with before include:</p>
+            <ol>
+                <li>Use of semantic HTML elements such as headers, footers, and sections which improve code readability, website accessibility, and SEO performance</li>
+                <li>[DOM manipulation to implement...]</li>
+            </ol>
         </section>
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/shanearceo/">LinkedIn</a>
-        <a href="https://github.com/arceos23">GitHub</a>
+        <div id="sign-off">
+            <p id="signature">Shane Arceo</p>
+            <p id="profession">Aspiring Software Engineer</p>
+        </div>
+        <div id="my-links">
+            <a href="https://www.linkedin.com/in/shanearceo/">LinkedIn</a>
+            <a href="https://github.com/arceos23">GitHub</a>
+        </div>
     </footer>
 </body>
 </html>
