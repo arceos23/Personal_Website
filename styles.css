@@ -180,6 +180,7 @@ footer {
 
 .slide-indicator:hover {
     box-shadow: 0px 0px 5px gold;
+    cursor: pointer;
 }
 
 .slide-indicator:first-of-type {
