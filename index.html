@@ -13,18 +13,22 @@
 </head>
 <body>
     <nav>
-        <div>
+        <div class="nav-header">
             <a href="#shane-arceo">Shane Arceo</a>
+        </div>
+        <div class="nav-links">
             <a href="#about-me">About me</a>
             <a href="#experience">Experience</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
-            <a href="#about-this-website">About this website</a>
+            <a href="#about-this-website">About this website</a>    
         </div>
     </nav>
     <main>
-        <header id="shane-arceo"><h1>Shane Arceo</h1></header>
+        <header id="shane-arceo">
+            <h1>Shane Arceo</h1>
+        </header>
         <section id="about-me">
             <h2>About me</h2>
             <p>I am an aspiring software engineer with interests in full stack development and the cloud. I enjoy learning about new technologies and digging deep into the details of how things work.</p>
@@ -38,48 +42,71 @@
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <h3>E-Sports Information Center</h3>
-            <div>
-                <img class="portfolio-img" src="./images/portfolio/E-Sports_Information_Center.png" alt="Filter games overview page by name in E-Sports Information Center portfolio project">
-                <p>This was a group project where I worked on a team of 4 to create an information center that explores video game metadata, ratings, sales, and top streamers. I enjoyed this project because I gained experience across the entire stack, implementing the frontend in React and backend in Next.js and MySQL.</p>
+            <div class="slide-indicators">
+                <span class="slide-indicator" js-slide-indicator0></span>
+                <span class="slide-indicator" js-slide-indicator1></span>
+                <span class="slide-indicator" js-slide-indicator2></span>
             </div>
-            <h3>Advent of Code 2022</h3>
-            <div>
-                <img class="portfolio-img" src="./images/portfolio/Advent_of_Code_2022.png" alt="Completion of the first eight days of Advent of Code 2022">
-                <p>I first heard about <a href="https://adventofcode.com/">Advent of Code</a> in December of 2021. Given the fall of 2021 was my first semester at Penn learning computer science, I wasn't quite ready to tackle those challenges as I had no significant experience with data structures, a key component to solving those problems, at the time. I decided to try again the following year for fun when I had more programming experience and could also use this opportunity to advance my Python skills since most of my significant programming experience at the time was in Java. I completed the first eight days of the challenge before I stopped to focus on final projects and exams.</p>
-            </div>
-            <h3>Philadelphia COVID Analysis</h3>
-            <div>
-                <img class="portfolio-img" src="./images/portfolio/Philadelphia_COVID_Analysis.png" alt="Filter games overview page by name in Philadelphia COVID Analysis portfolio project">
-                <p>This was my first group project where I worked on a team of two to analyze population, property, and COVID data sets. This project was incredibly interesting to me because it was my first exposure to implementing design patterns, namely singleton and strategy, and an N-tier architecture.</p>
+            <div class="carousel" js-carousel>
+                <div class="carousel-buttons">
+                    <button class="carousel-button carousel-button_prev" js-carousel-button-prev>&larr;</button>
+                    <button class="carousel-button carousel-button_next" js-carousel-button-next>&rarr;</button>
+                </div>
+                <div class="carousel-slides" js-carousel-slides>
+                    <div class="carousel-slide">
+                        <h3>E-Sports Information Center</h3>
+                        <div>
+                            <img class="portfolio-img" src="./images/portfolio/E-Sports_Information_Center.png" alt="Filter games overview page by name in E-Sports Information Center portfolio project">
+                            <p>This was a group project where I worked on a team of 4 to create an information center that explores video game metadata, ratings, sales, and top streamers. I enjoyed this project because I gained experience across the entire stack, implementing the frontend in React and backend in Next.js and MySQL.</p>
+                        </div>            
+                    </div>
+                    <div class="carousel-slide">
+                        <h3>Advent of Code 2022</h3>
+                        <div>
+                            <img class="portfolio-img" src="./images/portfolio/Advent_of_Code_2022.png" alt="Completion of the first eight days of Advent of Code 2022">
+                            <p>I first heard about <a href="https://adventofcode.com/">Advent of Code</a>, a 25-day Christmas themed programming puzzle challenge, in December of 2021. Given the fall of 2021 was my first semester at Penn learning computer science, I wasn't quite ready to tackle Advent of Code's programming puzzles as I had no significant experience with data structures, a key component to solving those problems, at the time. I decided to try again the following year for fun when I had more programming experience and could also use this opportunity to advance my Python skills since most of my significant programming experience at the time was in Java. I completed the first eight days of the challenge before I stopped to focus on final projects and exams.</p>
+                        </div>                
+                    </div>
+                    <div class="carousel-slide">
+                        <h3>Philadelphia COVID Analysis</h3>
+                        <div>
+                            <img class="portfolio-img" src="./images/portfolio/Philadelphia_COVID_Analysis.png" alt="Filter games overview page by name in Philadelphia COVID Analysis portfolio project">
+                            <p>This was my first group project where I worked on a team of two to analyze population, property, and COVID data sets. This project was incredibly interesting to me because it was my first exposure to implementing design patterns, namely singleton and strategy, and an N-tier architecture.</p>
+                        </div>                
+                    </div>                                                
+                </div>
             </div>
         </section>
         <section id="skills">
             <h2>Skills</h2>
             <p>Languages</p>
-                <div class="skills-block">
-                    <span class="skill">Python</span>
-                    <span class="skill">Java</span>
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">C</span>
-                </div>
+            <div class="skills-block">
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">C</span>
+            </div>
             <p>Web development</p>
-                <div class="skills-block">
-                    <span class="skill">HTML</span>
-                    <span class="skill">CSS</span>
-                    <span class="skill">React.js</span>
-                </div>
+            <div class="skills-block">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">React</span>
+            </div>
             <p>Technologies & tools</p>
-                <div class="skills-block">
-                    <span class="skill">JUnit</span>
-                    <span class="skill">SQL</span>
-                    <span class="skill">MongoDB</span>
-                    <span class="skill">Neo4j</span>
-                    <span class="skill">Firebase</span>
-                    <span class="skill">AWS</span>
-                    <span class="skill">Git</span>
-                    <span class="skill">GitHub</span>
-                </div>
+            <div class="skills-block">
+                <span class="skill">JUnit</span>
+                <span class="skill">SQL</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">Neo4j</span>
+                <span class="skill">Firebase</span>
+                <span class="skill">AWS</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+            </div>
+            <p>Certification</p>
+            <div class="skills-block">
+                <span class="skill"> <a href="https://www.credly.com/badges/62593b6d-5676-4a89-be3a-2a886d426161/public_url">AWS Certified Cloud Practitioner</a></span>
+            </div>
             </ul>
         </section>
         <section id="education">
@@ -129,10 +156,15 @@
             <h2>About this website</h2>
             <p>I built this website without the use of any libraries or frameworks to get more experience with the fundamentals of web development and have the utmost freedom and flexibility to create my website. New things I worked on that I did not have experience with before include:</p>
             <ol>
-                <li>Use of semantic HTML elements such as headers, footers, and sections which improve code readability, website accessibility, and SEO performance</li>
-                <li>[DOM manipulation to implement...]</li>
+                <li>Using semantic HTML elements such as headers, footers, and sections which improve code readability, website accessibility, and SEO performance</li>
+                <li>Manipulating the DOM to implement the portfolio carousel [and nav bar]</li>
             </ol>
-            <p>[Next steps for the website - cloud challenge]</p>
+            <p>[Currently, this website is hosted on [GitHub Pages]. Next, I want to folllow the <a href="https://cloudresumechallenge.dev/docs/faq/">Cloud Resume Challenge</a>] to gain hands-on experience with cloud technologies and DevOps. I have inherently completed some of this challenge since I have created this personal website and obtained the AWS Certified Cloud Practitioner certification. Completing this challenge would give me practical exposure with:</p>
+            <ol>
+                <li>DNS</li>
+                <li>Infrastructure as Code</li>
+                <li>CI/CD</li>
+            </ol>
         </section>
     </main>
     <footer>
@@ -145,5 +177,6 @@
             <a href="https://github.com/arceos23">GitHub</a>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
