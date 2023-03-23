@@ -166,12 +166,12 @@ footer {
 }
 
 .slide-indicator {
-    height: 0.5rem;
-    width: 0.5rem;
+    width: 15px;
+    height: 15px;
     background-color: rgb(58, 58, 58);
     border: ivory solid;
     border-radius: 50%;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0.1rem;
 }
 
