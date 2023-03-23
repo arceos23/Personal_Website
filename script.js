@@ -8,7 +8,7 @@ function setSlide(slideNumber) {
 
 function updateSlideIndicators(oldSlideNumber, curSlideNumber) {
   document.querySelector(`[js-slide-indicator${oldSlideNumber}]`).style.backgroundColor = "rgb(58, 58, 58)";
-  document.querySelector(`[js-slide-indicator${curSlideNumber}]`).style.backgroundColor = "ivory";
+  document.querySelector(`[js-slide-indicator${curSlideNumber}]`).style.backgroundColor = "goldenrod";
 }
 
 const carousel = document.querySelector("[js-carousel]");
