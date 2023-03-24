@@ -25,12 +25,12 @@ nav {
     z-index: 2;
 }
 
-.nav-header a {
+#nav-header a {
     font-size: large;
 }
 
 .nav-links a {
-    padding: 10px;
+    padding: 7px;
     font-size: small;
 }
 
@@ -39,8 +39,45 @@ nav div a:last-child {
     padding-right: 45px;
 }
 
-@media screen and (max-width: 745px) {
+/* .close-menu-button {
+    display: none;
+} */
 
+@media screen and (max-width: 760px) {
+    .menu-button {
+        display: block;
+        height: 20px;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 65px;
+    }
+    .line {
+        display: block;
+        border-radius: 10px;
+        height: 3px;
+        margin: 1px;
+        background-color: goldenrod;
+    }
+    .nav-links {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .show-link {
+        padding: 10px;
+        padding-right: 0px;
+        margin-right: 65px;
+    }
+    .show-button {
+        display: block;
+        background-color: rgb(48, 48, 48);
+        border: none;
+        color: goldenrod;
+        margin-right: 50px;
+    }
 }
 
 /* header */
@@ -69,15 +106,15 @@ h2, h3, h4 {
     margin-left: 20px;
 }
 
-#portfolio h3 {
+#selected-projects h3 {
     margin-top: 0px;
 }
 
-#portfolio img {
+#selected-projects img {
     margin-top: 40px;
 }
 
-#portfolio p {
+#selected-projects p {
     margin-top: 40px;
 }
 
@@ -87,9 +124,16 @@ h2, h3, h4 {
 
 a {
     text-decoration: none;
-    /* color: rgb(251, 242, 151); */
     color: goldenrod;
 }
+
+/* button {
+    background-color: rgb(48, 48, 48);
+    background-color: inherit;
+    border: none;
+    color: goldenrod;
+    display: none;
+} */
 
 a:hover {
     font-weight: bold;
@@ -121,7 +165,6 @@ section li {
     margin: 5px;
     border: 5px groove black;
     background-color: purple;
-    color: ivory;
     box-shadow: inset;
     padding: 0.5em;
 }
@@ -209,7 +252,7 @@ footer {
 
 .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 25%;
     z-index: 1;
   
     border-radius: 50%;
@@ -243,7 +286,7 @@ footer {
     flex: 0 0 100%;
 }
 
-.portfolio-img {
+.project-img {
     width: 80%;
     margin: auto;
     display: block;

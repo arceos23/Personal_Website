@@ -13,13 +13,19 @@
 </head>
 <body>
     <nav>
-        <div class="nav-header">
+        <div id="nav-header">
             <a href="#shane-arceo">Shane Arceo</a>
         </div>
+        <div class="menu-button">
+            <span class="line line0"></span>
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+        </div>
         <div class="nav-links">
+            <!-- <button class="close-menu-button">X</button> -->
             <a href="#about-me">About me</a>
             <a href="#experience">Experience</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#selected-projects">Selected projects</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#about-this-website">About this website</a>    
@@ -40,7 +46,7 @@
             <h3>Investment Banking Analyst</h3>
             <p>I worked as an investment banker for a little over a year within the Financial Institutions Group of Investment Grade Finance at J.P. Morgan. During this time, I further developed my skills such as time management, project management, cross-team collaboration, and attention to detail as I worked on several projects simultaneously across different teams to help companies raise millions to billions of dollars in the fast-paced capital markets.</p>
         </section>
-        <section id="portfolio">
+        <section id="selected-projects">
             <h2>Selected projects</h2>
             <div class="slide-indicators">
                 <button class="slide-indicator" js-slide-indicator0></button>
@@ -56,7 +62,7 @@
                     <div class="carousel-slide">
                         <h3>E-Sports Information Center</h3>
                         <div>
-                            <img class="portfolio-img" src="./images/portfolio/E-Sports_Information_Center.png" alt="Filter games overview page by name in E-Sports Information Center portfolio project">
+                            <img class="project-img" src="./images/projects/E-Sports_Information_Center.png" alt="Filter games overview page by name in E-Sports Information Center project">
                             <p>This was a group project where I worked on a team of 4 to create an information center that explores video game metadata, ratings, sales, and top streamers. I enjoyed this project because I gained experience across the entire stack, implementing the frontend in React and backend in Next.js and MySQL.</p>
                             <p class="last-p">Repo - this project is private, but I am happy to discuss!</p>
                         </div>            
@@ -64,7 +70,7 @@
                     <div class="carousel-slide">
                         <h3>Advent of Code 2022</h3>
                         <div>
-                            <img class="portfolio-img" src="./images/portfolio/Advent_of_Code_2022.png" alt="Completion of the first eight days of Advent of Code 2022">
+                            <img class="project-img" src="./images/projects/Advent_of_Code_2022.png" alt="Completion of the first eight days of Advent of Code 2022">
                             <p>I first heard about <a href="https://adventofcode.com/">Advent of Code</a>, a 25-day Christmas themed programming puzzle challenge, in December of 2021. Given the fall of 2021 was my first semester at Penn learning computer science, I wasn't quite ready to tackle Advent of Code's programming puzzles as I had no significant experience with data structures, a key component to solving those problems, at the time. I decided to try again the following year for fun when I had more programming experience and could also use this opportunity to advance my Python skills since most of my significant programming experience at the time was in Java. I completed the first eight days of the challenge before I stopped to focus on final projects and exams.</p>
                             <p class="last-p"><a href="https://github.com/arceos23/Advent_of_Code_2022">Repo</a></p>
                         </div>                
@@ -72,7 +78,7 @@
                     <div class="carousel-slide">
                         <h3>Philadelphia COVID Analysis</h3>
                         <div>
-                            <img class="portfolio-img" src="./images/portfolio/Philadelphia_COVID_Analysis.png" alt="Filter games overview page by name in Philadelphia COVID Analysis portfolio project">
+                            <img class="project-img" src="./images/projects/Philadelphia_COVID_Analysis.png" alt="Filter games overview page by name in Philadelphia COVID Analysis project">
                             <p>This was my first group project where I worked on a team of two to analyze population, property, and COVID data sets. This project was incredibly interesting to me because it was my first exposure to implementing design patterns, namely singleton and strategy, and an N-tier architecture.</p>
                             <p class="last-p">Repo - this project is private, but I am happy to discuss!</p>
                         </div>                
@@ -160,19 +166,23 @@
             <ul>
                 <li>Awarded <a href="https://gmsp.org/">nationwide scholarship</a> that fully funds college education/expenses</li>
                 <li>Selected as one of 1,000 high school seniors out of over 57,000 applicants who demonstrated academic excellence, leadership, and a commitment to better society</li>
+                <li>Featured in my hometown's <a href="https://www.dailypress.com/757teamz/dp-spt-arceo-gates-0503-20150502-story.html">local newspaper</a> for earning this scholarship</li>
             </ul>
             <h4>Georgetown Scholars Program / 1789</h4>
             <ul>
-                <li>Selected as part of 10% of the incoming class, through a record of high achievement, to participate in the Georgetown Scholars Program</li>
+                <li>Selected as part of 10% of the incoming class, by a preference for first generation, low-income, high-achieving students, to participate in the <a href="https://gsp.georgetown.edu/">Georgetown Scholars Program</a> and receive a scholarship</li>
             </ul>
             <h4>JPM Launching Leaders</h4>
+            <ul>
+                <li>Selected to receive two scholarships, in addition to two internships at J.P. Morgan, by demonstrating outstanding achievement and ambition from a diverse background</li>
+            </ul>
         </section>
         <section id="about-this-website">
             <h2>About this website</h2>
             <p>I built this website without the use of any libraries or frameworks to get more experience with the fundamentals of web development and have the utmost freedom and flexibility to create my website. New things I worked on that I did not have experience with before include:</p>
             <ol>
                 <li>Using semantic HTML elements such as headers, footers, and sections which improve code readability, website accessibility, and SEO performance</li>
-                <li>Manipulating the DOM to implement the portfolio carousel [and nav bar]</li>
+                <li>Manipulating the DOM to implement the selected project carousel [and nav bar]</li>
             </ol>
             <p>Currently, this website is hosted on [GitHub Pages]. Next, I want to complete the <a href="https://cloudresumechallenge.dev/docs/faq/">Cloud Resume Challenge</a> to gain hands-on experience with cloud technologies and DevOps. I have inherently completed some of this challenge since I have already created this personal website and obtained the AWS Certified Cloud Practitioner certification. Completing this challenge would give me practical exposure with:</p>
             <ol>
