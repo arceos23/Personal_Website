@@ -1,33 +1,21 @@
 // nav
 const menu = document.getElementsByClassName("menu-button")[0];
 menu.addEventListener("click", () => {
-  if (menu.children.length === 1) {
-    menuBtn = document.getElementsByClassName("menu-button")[0];
-    menuBtn.innerText = "";
-    for (let i = 0; i < 3; i++) {
-      const line = document.createElement("span");
-      line.classList.toggle("line");
-      line.classList.toggle(`line${i}`);
-      menuBtn.appendChild(line);
+  for (child of menu.children) {
+    console.log(child);
+    if (child.tagName === "span") {
+      console.log("b");
     }
-  } else {
-    menuBtn = document.getElementsByClassName("menu-button")[0];
-    const btnNode = document.createElement("button");
-    const textNode = document.createTextNode("X");
-    btnNode.appendChild(textNode);
-    menuBtn.replaceChildren(btnNode);
   }
-  navLinks = document.getElementsByClassName("nav-links");
-  navLinks[0].style.marginTop = "180px";
-  navLinks[0].style.backgroundColor = "rgb(48, 48, 48, 0.75)";
-  navLinks[0].classList.toggle("show");
-  for (child of navLinks[0].children) {
+  navLinks = document.getElementsByClassName("nav-links")[0];
+  navLinks.style.backgroundColor = "rgb(48, 48, 48, 0.75)";
+  navLinks.classList.toggle("show");
+  closeMenuBtn = document.getElementsByClassName("close-menu-button")[0];
+  closeMenuBtn.classList.toggle("show-button");
+  menuBtn = document.getElementsByClassName("menu-button")[0];
+  menuBtn.classList.toggle("shift-menu");
+  for (child of navLinks.children) {
     child.classList.toggle("show");
-    if (child.tagName == "A") {
-      child.classList.toggle("show-link");
-    } else if (child.tagName == "BUTTON") {
-      child.classList.toggle("show-button");
-    }
   }
 });
 
