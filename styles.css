@@ -12,7 +12,7 @@ html, body {
 }
 
 /* nav bar */
-nav div {
+nav {
     background-color: rgb(48, 48, 48);
     top: 0px;
     height: 60px;
@@ -25,16 +25,29 @@ nav div {
     z-index: 2;
 }
 
+.nav-header a {
+    font-size: large;
+}
+
+.nav-links a {
+    padding: 10px;
+    font-size: small;
+}
+
 nav div a:last-child {
     margin-right: 20px;
     padding-right: 45px;
+}
+
+@media screen and (max-width: 745px) {
+
 }
 
 /* header */
 h1 {
     /* color: rgb(99, 200, 240); */
     color: rgb(32, 132, 154);
-    font-style: italic;
+    /* font-style: italic; */
     text-align: center;
     padding-top: 60px;
     padding-bottom: 20px;
