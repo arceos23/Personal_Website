@@ -27,7 +27,7 @@
                 <a href="#selected-projects">Selected projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#education">Education</a>
-                <a href="#about-this-website">About this website</a>    
+                <a href="#about-this-website">About this website</a>
             </div>
         </div>
     </nav>
@@ -37,7 +37,7 @@
         </header>
         <section id="about-me">
             <h2>About me</h2>
-            <p>I am an aspiring software engineer with interests in full stack development and the cloud. I enjoy learning about new technologies and digging deep into the details of how things work.</p>
+            <p>I am an aspiring software engineer with interests in full stack development, the cloud, and scaling applications. I enjoy learning about new technologies and digging deep into the details of how things work.</p>
         </section>
         <section id="experience">
             <h2>Experience</h2>
@@ -52,6 +52,7 @@
                 <button class="slide-indicator" js-slide-indicator0></button>
                 <button class="slide-indicator" js-slide-indicator1></button>
                 <button class="slide-indicator" js-slide-indicator2></button>
+                <button class="slide-indicator" js-slide-indicator3></button>
             </div>
             <div class="carousel" js-carousel>
                 <div class="carousel-buttons">
@@ -60,12 +61,22 @@
                 </div>
                 <div class="carousel-slides" js-carousel-slides>
                     <div class="carousel-slide">
+                        <h3>Photo Sharing App (in-progress)</h3>
+                        <div>
+                            <img class="project-img" src="./images/projects/Photo_Sharing_App.png" alt="">
+                            <p>This was a personal project that I made in order to help me gain experience building a full-stack web app that allowed for CRUD operations to a NoSQL database based on authentication status of the current user. On the frontend, I built the UI using Material UI and routed across pages using Next.js. On the backend, I used Firebase Firestone. For authentication, the app authenticates users using their Google Accounts through Firebase Authentication. I also used this project as an opportunity to use TypeScript for the first time.</p>
+                            <p>In terms of functionality, all users can view all posts, ordered by most recent post edit, in the home feed. However, the my posts and make post routes are protected unless a user logs in with a Google account. Once logged in, a user can then make posts and also heart and comment on other posts. Users are prevented from hearting a post more than once.</p>
+                            <p>Currently, I'm currently working on adding more functionality such as authentication via username and password and allowing users to upload an image when creating a post. Eventually, I plan to host this app on Vercel once I have ensured app security.</p>
+                            <p class="last-p"><a href="https://github.com/arceos23/social_media_app/tree/main/social_media">Repo</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
                         <h3>E-Sports Information Center</h3>
                         <div>
                             <img class="project-img" src="./images/projects/E-Sports_Information_Center.png" alt="Filter games overview page by name in E-Sports Information Center project">
                             <p>This was a group project where I worked on a team of 4 to create an information center that explores video game metadata, ratings, sales, and top streamers. I enjoyed this project because I gained experience across the entire stack, implementing the frontend in React and backend in Next.js and MySQL.</p>
                             <p class="last-p">Repo - this project is private, but I am happy to discuss!</p>
-                        </div>            
+                        </div>
                     </div>
                     <div class="carousel-slide">
                         <h3>Advent of Code 2022</h3>
@@ -73,7 +84,7 @@
                             <img class="project-img" src="./images/projects/Advent_of_Code_2022.png" alt="Completion of the first eight days of Advent of Code 2022">
                             <p>I first heard about <a href="https://adventofcode.com/">Advent of Code</a>, a 25-day Christmas themed programming puzzle challenge, in December of 2021. Given the fall of 2021 was my first semester at Penn learning computer science, I wasn't quite ready to tackle Advent of Code's programming puzzles as I had no significant experience with data structures, a key component to solving those problems, at the time. I decided to try again the following year for fun when I had more programming experience and could also use this opportunity to advance my Python skills since most of my significant programming experience at the time was in Java. I completed the first eight days of the challenge before I stopped to focus on final projects and exams.</p>
                             <p class="last-p"><a href="https://github.com/arceos23/Advent_of_Code_2022">Repo</a></p>
-                        </div>                
+                        </div>
                     </div>
                     <div class="carousel-slide">
                         <h3>Philadelphia COVID Analysis</h3>
@@ -81,8 +92,8 @@
                             <img class="project-img" src="./images/projects/Philadelphia_COVID_Analysis.png" alt="Filter games overview page by name in Philadelphia COVID Analysis project">
                             <p>This was my first group project where I worked on a team of two to analyze population, property, and COVID data sets. This project was incredibly interesting to me because it was my first exposure to implementing design patterns, namely singleton and strategy, and an N-tier architecture.</p>
                             <p class="last-p">Repo - this project is private, but I am happy to discuss!</p>
-                        </div>                
-                    </div>                                                
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
