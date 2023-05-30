@@ -126,12 +126,13 @@ h4 {
   margin-top: 40px;
 }
 
-#selected-projects p {
+.after-image-p {
   margin-top: 40px;
 }
 
-#last-p {
-  margin-top: 40px;
+.last-p {
+  margin-top: 20px;
+  display: block;
 }
 
 a {
