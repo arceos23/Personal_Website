@@ -118,6 +118,15 @@ h4 {
   margin-left: 20px;
 }
 
+#experience h3 {
+  margin-bottom: 0px;
+}
+
+.experience-last-p:not(:last-child) {
+  margin-bottom: 40px;
+  display: block;
+}
+
 #selected-projects h3 {
   margin-top: 0px;
 }
@@ -130,7 +139,7 @@ h4 {
   margin-top: 40px;
 }
 
-.last-p {
+.carousel-slide-last-p {
   margin-top: 20px;
   display: block;
 }
