@@ -39,6 +39,7 @@ const slideIndicator1 = document.querySelector('[js-slide-indicator1]');
 const slideIndicator2 = document.querySelector('[js-slide-indicator2]');
 const slideIndicator3 = document.querySelector('[js-slide-indicator3]');
 const slideIndicator4 = document.querySelector('[js-slide-indicator4]');
+const slideIndicator5 = document.querySelector('[js-slide-indicator5]');
 const buttonPrev = document.querySelector('[js-carousel-button-prev]');
 const buttonNext = document.querySelector('[js-carousel-button-next]');
 const carouselSlides = document.querySelector('[js-carousel-slides]');
@@ -72,6 +73,12 @@ slideIndicator3.addEventListener('click', () => {
 slideIndicator4.addEventListener('click', () => {
   oldSlide = curSlide;
   curSlide = 4;
+  setSlide(curSlide);
+  updateSlideIndicators(oldSlide, curSlide);
+});
+slideIndicator5.addEventListener('click', () => {
+  oldSlide = curSlide;
+  curSlide = 5;
   setSlide(curSlide);
   updateSlideIndicators(oldSlide, curSlide);
 });
