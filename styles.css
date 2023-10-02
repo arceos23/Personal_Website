@@ -189,6 +189,10 @@ section li {
   font-weight: bold;
 }
 
+#pre-sign-off {
+  margin-bottom: 60px;
+}
+
 /* footer and signature */
 footer {
   background-color: rgb(48, 48, 48);
@@ -202,6 +206,7 @@ footer {
   height: 60px;
   justify-content: space-between;
   width: 100%;
+  position: fixed;
 }
 
 #sign-off p {
